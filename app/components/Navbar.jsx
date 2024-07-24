@@ -5,7 +5,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false); // State to manage dropdown visibility
 
   const navLinks = [
-    { name: "Home", link: "/" },
+    // { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Skills", link: "/skills" },
     { name: "Projects", link: "/projects" },
@@ -14,13 +14,20 @@ const Navbar = () => {
   ];
 
   const toggleDropdown = () => {
+    console.log("toggled");
     setDropdownOpen(!dropdownOpen); // Toggle dropdown state
   };
 
   return (
-    <div className="navbar lg:justify-center bg-primary text-white luxurious h-20 drop-shadow-lg">
-      <div className="md:hidden navbar-start"></div>
-      <div className="md:hidden navbar-center"></div>
+    <nav className="navbar lg:justify-center bg-primary text-neutral luxurious h-14  lg:h-20 drop-shadow-lg">
+      <a href="/" className="navbar-start lg:absolute left-10 cursor-pointer">
+        <img
+          src="/tplogo.png"
+          alt="Logo"
+          className="h-10 w-10 lg:h-14 lg:w-14 object-contain object-center rounded-lg  absolute"
+        />
+      </a>
+      <div className="lg:hidden navbar-center"></div>
       <div className="hidden lg:flex gap-24">
         {navLinks.map((item) => (
           <a
@@ -32,7 +39,7 @@ const Navbar = () => {
           </a>
         ))}
       </div>
-      <div className="md:hidden navbar-end">
+      <div className="lg:hidden navbar-end">
         <div className="dropdown">
           <div
             tabIndex={0}
@@ -56,21 +63,19 @@ const Navbar = () => {
             </svg>
           </div>
           {dropdownOpen && ( // Render dropdown if dropdownOpen is true
-            <ul className="menu menu-sm dropdown-content bg-primary rounded-box z-[1] mt-5 absolute right-1 w-52 p-2 shadow">
-              <li>
-                <a>Homepage</a>
-              </li>
-              <li>
-                <a>Portfolio</a>
-              </li>
-              <li>
-                <a>About</a>
-              </li>
+            <ul className="bg-primary rounded-box z-20 mt-5 absolute right-1 w-52 p-2 shadow">
+              {navLinks.map((item) => {
+                return (
+                  <li key={item.name}>
+                    <a href={item.link}>{item.name}</a>
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

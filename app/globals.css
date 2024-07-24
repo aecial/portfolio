@@ -8,3 +8,9 @@
 .main-height {
   height: calc(100vh - 5rem);
 }
+.main-height-mobile {
+  height: calc(100vh - 3.5rem);
+}
+body {
+  background-color: #f5e9e0;
+}

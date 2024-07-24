@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex bg-neutral main-height-mobile lg:main-height luxurious">
+    <main className="flex bg-neutral main-height luxurious">
       {/* Web */}
       <div className="hidden bg-transparent w-[50%] lg:flex flex-col justify-center items-center gap-4">
         <h1 className="text-[7rem] text-accent">Teddy Pascual</h1>

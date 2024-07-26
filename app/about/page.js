@@ -1,7 +1,9 @@
+import PageTitle from "../components/PageTitle";
+
 const about = () => {
   return (
     <div className="main-height flex flex-col p-8 gap-4">
-      <h1 className="text-4xl text-center text-primary luxurious">About Me</h1>
+      <PageTitle title={"About Me"} />
       <div className="flex flex-col lg:flex-row h-full gap-8">
         <div className="w-full lg:w-[50%]  text-white flex justify-center items-center">
           <h3 className="text-3xl text-left lg:text-justify p-2 lg:p-4 indent-4 lg:indent-8 bg-primary rounded-sm">

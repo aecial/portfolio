@@ -30,6 +30,7 @@ const ProjectContainer = ({
         {technologies.map((tech) => {
           return (
             <SkillBox
+              key={tech}
               src={`/${tech}.jpg`}
               title={`${tech}`}
               color={"neutral"}

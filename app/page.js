@@ -7,9 +7,13 @@ export default function Home() {
       <div className="hidden bg-transparent w-[50%] lg:flex flex-col justify-center items-center gap-4">
         <h1 className="text-[7rem] text-accent">Teddy Pascual</h1>
         <h4 className="text-3xl text-accent mb-4">Full-Stack Developer</h4>
-        <button className="btn btn-secondary text-neutral w-[55%] rounded-full text-lg">
+        <a
+          href="/PascualResume.pdf"
+          className="btn btn-secondary text-neutral w-[55%] rounded-full text-lg"
+          download
+        >
           Download Resume
-        </button>
+        </a>
       </div>
       <div className="bg-[#ACB5B3] w-[50%] overflow-hidden hidden lg:block">
         <img
@@ -28,9 +32,13 @@ export default function Home() {
         <div className="flex flex-col w-full justify-center items-center">
           <h1 className="text-4xl text-accent">Teddy Pascual</h1>
           <h4 className="text-xl text-accent mb-4">Full-Stack Developer</h4>
-          <button className="btn btn-secondary text-neutral w-[85%] rounded-full text-lg">
+          <a
+            href="/PascualResume.pdf"
+            className="btn btn-secondary text-neutral w-[85%] rounded-full text-lg"
+            download
+          >
             Download Resume
-          </button>
+          </a>
         </div>
       </div>
     </main>

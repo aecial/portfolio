@@ -43,7 +43,7 @@ const contact = () => {
       <div className="flex justify-center items-center w-full gap-8 pb-2 lg:pb-0">
         {socials.map((social) => {
           return (
-            <a href={social.link}>
+            <a href={social.link} key={social.src}>
               <img
                 src={`/icons/${social.src}`}
                 alt={social.src}

@@ -4,6 +4,10 @@ const ProjectContainer = ({
   projectDescription,
   technologies,
   src,
+  demo,
+  demoLink,
+  site,
+  siteLink,
 }) => {
   return (
     <div className="bg-primary w-full h-80 lg:w-[30rem] lg:h-96 p-2 flex flex-col gap-2 rounded-sm">
@@ -40,12 +44,23 @@ const ProjectContainer = ({
       </div>
 
       <div className="flex justify-between">
-        <button className="btn btn-outline text-neutral hover:bg-neutral hover:text-primary hover:border-white rounded-full">
-          Demo
-        </button>
-        <button className="btn btn-neutral text-primary rounded-full">
-          Live Site
-        </button>
+        {demo && (
+          <a
+            href={demoLink}
+            className="btn btn-outline text-neutral hover:bg-neutral hover:text-primary hover:border-white rounded-full"
+          >
+            Demo
+          </a>
+        )}
+
+        {site && (
+          <a
+            href={siteLink}
+            className="btn btn-neutral text-primary rounded-full"
+          >
+            Live Site
+          </a>
+        )}
       </div>
     </div>
   );

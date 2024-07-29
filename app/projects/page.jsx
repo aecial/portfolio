@@ -12,6 +12,8 @@ const projects = () => {
           projectTitle={"Agrikultur'App"}
           projectDescription={"Agricultural Online Produce Auction Platform"}
           technologies={["html", "css", "javascript", "bootstrap", "laravel"]}
+          demo={true}
+          site={true}
         />
         <ProjectContainer
           src={"/p1.jpg"}

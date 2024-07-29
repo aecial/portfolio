@@ -1,8 +1,10 @@
 import React from "react";
+import PageTitle from "../components/PageTitle";
 
 const journey = () => {
   return (
     <div className="main-height flex flex-col p-8 gap-4">
+      <PageTitle title={"My Journey"} />
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
           <div className="timeline-middle">

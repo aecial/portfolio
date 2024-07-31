@@ -8,30 +8,27 @@ const projects = () => {
       <PageTitle title={"My Projects"} />
       <div className="flex flex-col lg:flex-row gap-4 flex-wrap justify-center items-center pb-4">
         <ProjectContainer
-          src={"/p1.jpg"}
-          projectTitle={"Agrikultur'App"}
-          projectDescription={"Agricultural Online Produce Auction Platform"}
-          technologies={["html", "css", "javascript", "bootstrap", "laravel"]}
-          demo={true}
+          src={"/projects/p1.jpg"}
+          projectTitle={"Miralles Resort"}
+          projectDescription={"Website for Miralles Resort SEO optimized"}
+          technologies={["html", "css", "javascript", "tailwind"]}
           site={true}
+          siteLink={"https://www.mirallesresort.com/"}
         />
         <ProjectContainer
-          src={"/p1.jpg"}
-          projectTitle={"Agrikultur'App"}
-          projectDescription={"Agricultural Online Produce Auction Platform"}
-          technologies={["html", "css", "javascript", "bootstrap", "laravel"]}
-        />
-        <ProjectContainer
-          src={"/p1.jpg"}
-          projectTitle={"Agrikultur'App"}
-          projectDescription={"Agricultural Online Produce Auction Platform"}
-          technologies={["html", "css", "javascript", "bootstrap", "laravel"]}
-        />
-        <ProjectContainer
-          src={"/p1.jpg"}
-          projectTitle={"Agrikultur'App"}
-          projectDescription={"Agricultural Online Produce Auction Platform"}
-          technologies={["html", "css", "javascript", "bootstrap", "laravel"]}
+          src={"/projects/p2.jpg"}
+          projectTitle={"LGU-Gerona Queueing System"}
+          projectDescription={"Queueing System for LGU Gerona"}
+          technologies={[
+            "html",
+            "css",
+            "javascript",
+            "tailwind",
+            "react",
+            "express",
+            "mysql",
+          ]}
+          demo={true}
         />
       </div>
     </div>

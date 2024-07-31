@@ -44,10 +44,11 @@ const ProjectContainer = ({
       </div>
 
       <div className="flex justify-between">
+        {!demo || !site ? <span></span> : ""}
         {demo && (
           <a
             href={demoLink}
-            className="btn btn-outline text-neutral hover:bg-neutral hover:text-primary hover:border-white rounded-full"
+            className="btn btn-neutral text-primary rounded-full"
           >
             Demo
           </a>

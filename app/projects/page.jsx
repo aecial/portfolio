@@ -45,7 +45,7 @@ const projects = () => {
             "css",
             "javascript",
             "bootstrap",
-            "Laravel",
+            "laravel",
             "mysql",
           ]}
           site={true}

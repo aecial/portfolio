@@ -20,6 +20,12 @@ const projects = () => {
             "express",
             "mysql",
           ]}
+          features={[
+            "Real-time Ticket Updates",
+            "Ticket Transferring",
+            "Role-based Access",
+            "Reporting",
+          ]}
           demo={true}
         />
         <ProjectContainer
@@ -33,6 +39,11 @@ const projects = () => {
             "bootstrap",
             "php",
             "mysql",
+          ]}
+          features={[
+            "Printing of Civil Registry Form",
+            "Data Visualization and Reporting",
+            "Searching and Filtering",
           ]}
           demo={true}
         />
@@ -48,6 +59,11 @@ const projects = () => {
             "laravel",
             "mysql",
           ]}
+          features={[
+            "Real-time Auction",
+            "Admin-Controlled Registration Verification",
+            "Produce Pricing Guidelines",
+          ]}
           site={true}
           siteLink={"https://www.mirallesresort.com/"}
         />
@@ -56,6 +72,11 @@ const projects = () => {
           projectTitle={"Miralles Resort"}
           projectDescription={"Website for Miralles Resort SEO optimized"}
           technologies={["html", "css", "javascript", "tailwind"]}
+          features={[
+            "SEO Optimized",
+            "Whole Page Carousel",
+            "Photo Viewer / Gallery",
+          ]}
           site={true}
           siteLink={"https://www.mirallesresort.com/"}
         />
@@ -71,6 +92,11 @@ const projects = () => {
             "tailwind",
             "php",
             "mysql",
+          ]}
+          features={[
+            "Role-based Access",
+            "Real-Time Visual Updates",
+            "Total Income Reporting with Data Visualization",
           ]}
           demo={true}
         />

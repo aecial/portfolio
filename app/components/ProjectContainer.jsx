@@ -3,6 +3,7 @@ const ProjectContainer = ({
   projectTitle,
   projectDescription,
   technologies,
+  features,
   src,
   demo,
   demoLink,
@@ -10,7 +11,7 @@ const ProjectContainer = ({
   siteLink,
 }) => {
   return (
-    <div className="bg-primary w-full h-80 lg:w-[30rem] lg:h-96 p-2 flex flex-col gap-2 rounded-sm">
+    <div className="bg-primary w-full h-[30rem] lg:w-[30rem] lg:h-[33rem] p-2 flex flex-col justify-between gap-2 rounded-sm">
       <div className="lg:flex lg:flex-col flex-col-reverse">
         <h1 className="hidden lg:block text-2xl text-neutral text-center luxurious mb-2">
           {projectTitle}
@@ -26,6 +27,14 @@ const ProjectContainer = ({
             {projectDescription}
           </div>
         </div>
+      </div>
+      <div>
+        <h2 className="text-xl text-neutral luxurious">Key Features:</h2>
+        <ul className="list-disc ml-8 text-neutral capitalize">
+          {features.map((feature) => {
+            return <li key={feature}>{feature}</li>;
+          })}
+        </ul>
       </div>
       <h2 className="hidden lg:block text-xl text-neutral luxurious">
         Technologies Used:

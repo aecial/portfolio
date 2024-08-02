@@ -65,7 +65,6 @@ const projects = () => {
             "Produce Pricing Guidelines",
           ]}
           site={true}
-          siteLink={"https://www.mirallesresort.com/"}
         />
         <ProjectContainer
           src={"/projects/p1.jpg"}

@@ -58,6 +58,7 @@ const ProjectContainer = ({
           <a
             href={demoLink}
             className="btn btn-neutral text-primary rounded-full"
+            disabled={!demoLink}
           >
             Demo
           </a>
@@ -67,6 +68,7 @@ const ProjectContainer = ({
           <a
             href={siteLink}
             className="btn btn-neutral text-primary rounded-full"
+            disabled={!siteLink}
           >
             Live Site
           </a>

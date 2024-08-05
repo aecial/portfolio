@@ -14,7 +14,17 @@ const contact = () => {
         title={"Need a Web Solution That Works as Uniquely as Your Business?"}
       />
       <PageTitle title={"Let's Make it Happen!"} />
-      <div className="flex flex-col gap-8 mt-4">
+
+      <form
+        action="https://api.web3forms.com/submit"
+        method="post"
+        className="flex flex-col gap-8 mt-4"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="2780ec3c-c5f2-427f-8030-8b995aef6bfb"
+        />
         <input
           type="text"
           placeholder="example@gmail.com"
@@ -32,7 +42,8 @@ const contact = () => {
             placeholder=""
           ></textarea>
         </label>
-      </div>
+      </form>
+
       <button className="btn btn-primary w-full max-w-xs mx-auto">
         Submit
       </button>

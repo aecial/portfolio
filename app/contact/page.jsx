@@ -17,7 +17,7 @@ const contact = () => {
 
       <form
         action="https://api.web3forms.com/submit"
-        method="post"
+        method="POST"
         className="flex flex-col gap-8 mt-4"
       >
         <input
@@ -28,6 +28,7 @@ const contact = () => {
         <input
           type="text"
           placeholder="example@gmail.com"
+          name="email"
           className="mx-auto mt-4 input input-bordered border-primary text-primary placeholder:text-primary focus:border-primary w-full max-w-xs"
         />
         <label className="form-control mt-4">
@@ -40,13 +41,14 @@ const contact = () => {
           <textarea
             className="textarea textarea-bordered h-24 w-full max-w-xs mx-auto"
             placeholder=""
+            name="message"
           ></textarea>
         </label>
+        <button className="btn btn-primary w-full max-w-xs mx-auto">
+          Submit
+        </button>
       </form>
 
-      <button className="btn btn-primary w-full max-w-xs mx-auto">
-        Submit
-      </button>
       <div className="divider divider-primary"></div>
       <h3 className="text-2xl text-center luxurious text-primary">
         My Socials

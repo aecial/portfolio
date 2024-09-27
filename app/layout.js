@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import "./globals.css";
+import "../app/globals.css";
 import { Luxurious_Roman } from "next/font/google";
 const luxurious_init = Luxurious_Roman({
   subsets: ["latin"],
